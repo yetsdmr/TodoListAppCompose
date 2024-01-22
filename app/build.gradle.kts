@@ -52,6 +52,7 @@ android {
         }
     }
 
+    // For exportSchema true
     ksp {
         arg("room.schemaLocation", "$projectDir/schemas")
     }

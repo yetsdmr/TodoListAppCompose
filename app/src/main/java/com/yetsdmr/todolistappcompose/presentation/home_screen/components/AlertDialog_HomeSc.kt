@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yetsdmr.todolistappcompose.domain.model.Todo
 import com.yetsdmr.todolistappcompose.presentation.MainViewModel
+import com.yetsdmr.todolistappcompose.presentation.common.taskTextStyle
 import com.yetsdmr.todolistappcompose.presentation.common.toastMsg
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.job
@@ -115,7 +116,8 @@ fun AlertDailog_HomeSc(
                                     contentDescription = null
                                 )
                             }
-                        }
+                        },
+                        textStyle = taskTextStyle
                     )
                     Row(
                         modifier = Modifier
